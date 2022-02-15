@@ -11,10 +11,10 @@ def liderAhenkStatus():
     r = random.randint(0, 1)
     if r:
         # service is active
-        tray.showMessage(title, activeMsg, 100)
+        tray.showMessage(title, activeMsg, icon, 100)
     else:
         # service is inactive
-        tray.showMessage(title, inactiveMsg, 100)
+        tray.showMessage(title, inactiveMsg, icon, 100)
 
 app = QApplication([])
 app.setQuitOnLastWindowClosed(False)
